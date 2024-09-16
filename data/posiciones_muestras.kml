@@ -1,0 +1,674 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="posiciones_muestras" id="posiciones_muestras">
+	<SimpleField name="timestamp" type="string"></SimpleField>
+	<SimpleField name="begin" type="string"></SimpleField>
+	<SimpleField name="end" type="string"></SimpleField>
+	<SimpleField name="altitudeMode" type="string"></SimpleField>
+	<SimpleField name="tessellate" type="int"></SimpleField>
+	<SimpleField name="extrude" type="int"></SimpleField>
+	<SimpleField name="visibility" type="int"></SimpleField>
+	<SimpleField name="drawOrder" type="int"></SimpleField>
+	<SimpleField name="icon" type="string"></SimpleField>
+	<SimpleField name="coord_validadas" type="string"></SimpleField>
+	<SimpleField name="tipo_de_muestreo" type="string"></SimpleField>
+	<SimpleField name="x_inicial" type="int"></SimpleField>
+	<SimpleField name="y_inicial" type="int"></SimpleField>
+	<SimpleField name="pto_GPS_inicial" type="string"></SimpleField>
+	<SimpleField name="x_final" type="int"></SimpleField>
+	<SimpleField name="y_final" type="int"></SimpleField>
+	<SimpleField name="pto_GPS_final" type="string"></SimpleField>
+	<SimpleField name="datum" type="string"></SimpleField>
+	<SimpleField name="fecha" type="string"></SimpleField>
+	<SimpleField name="unidad_geom" type="string"></SimpleField>
+	<SimpleField name="proyecto" type="string"></SimpleField>
+	<SimpleField name="responsables" type="string"></SimpleField>
+	<SimpleField name="pais" type="string"></SimpleField>
+	<SimpleField name="lugar" type="string"></SimpleField>
+</Schema>
+<Folder><name>posiciones_muestras</name>
+  <Placemark>
+	<name>LPRO_01</name>
+	<description>LPRO_01</description>
+	<ExtendedData><SchemaData schemaUrl="#posiciones_muestras">
+		<SimpleData name="tessellate">-1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+		<SimpleData name="coord_validadas">sí</SimpleData>
+		<SimpleData name="tipo_de_muestreo">rodal con identificación litológica</SimpleData>
+		<SimpleData name="x_inicial">342407</SimpleData>
+		<SimpleData name="y_inicial">2029878</SimpleData>
+		<SimpleData name="pto_GPS_inicial">175/I</SimpleData>
+		<SimpleData name="datum">WGS84</SimpleData>
+		<SimpleData name="fecha">28/09/14</SimpleData>
+		<SimpleData name="unidad_geom">banco mediano (distal)</SimpleData>
+		<SimpleData name="proyecto">práctica geomorfología</SimpleData>
+		<SimpleData name="responsables">Luis Infanzón, Siomaly Hernández, Juan Millord</SimpleData>
+		<SimpleData name="pais">RD</SimpleData>
+		<SimpleData name="lugar">Los Pilones, cauce del río Ocoa</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.4915152105964,18.3529206879988</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>LPRO_02</name>
+	<description>LPRO_02</description>
+	<ExtendedData><SchemaData schemaUrl="#posiciones_muestras">
+		<SimpleData name="tessellate">-1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+		<SimpleData name="coord_validadas">sí</SimpleData>
+		<SimpleData name="tipo_de_muestreo">rodal con identificación litológica</SimpleData>
+		<SimpleData name="x_inicial">342403</SimpleData>
+		<SimpleData name="y_inicial">2029900</SimpleData>
+		<SimpleData name="pto_GPS_inicial">176/I</SimpleData>
+		<SimpleData name="datum">WGS84</SimpleData>
+		<SimpleData name="fecha">28/09/14</SimpleData>
+		<SimpleData name="unidad_geom">banco mediano (distal)</SimpleData>
+		<SimpleData name="proyecto">práctica geomorfología</SimpleData>
+		<SimpleData name="responsables">Lissette Rodríguez, Víctor Paredes, Iris Santos</SimpleData>
+		<SimpleData name="pais">RD</SimpleData>
+		<SimpleData name="lugar">Los Pilones, cauce del río Ocoa</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.4915547652344,18.3531191667288</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>LPRO_03</name>
+	<description>LPRO_03</description>
+	<ExtendedData><SchemaData schemaUrl="#posiciones_muestras">
+		<SimpleData name="tessellate">-1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+		<SimpleData name="coord_validadas">sí</SimpleData>
+		<SimpleData name="tipo_de_muestreo">rodal con identificación litológica</SimpleData>
+		<SimpleData name="x_inicial">342400</SimpleData>
+		<SimpleData name="y_inicial">2029930</SimpleData>
+		<SimpleData name="pto_GPS_inicial">428/JR</SimpleData>
+		<SimpleData name="datum">WGS84</SimpleData>
+		<SimpleData name="fecha">28/09/14</SimpleData>
+		<SimpleData name="unidad_geom">banco mediano (proximal)</SimpleData>
+		<SimpleData name="proyecto">práctica geomorfología</SimpleData>
+		<SimpleData name="responsables">Hoara Vicioso, Jatnna Paredes</SimpleData>
+		<SimpleData name="pais">RD</SimpleData>
+		<SimpleData name="lugar">Los Pilones, cauce del río Ocoa</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.4915854786094,18.3533900013484</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>RBAT_01</name>
+	<description>RBAT_01</description>
+	<ExtendedData><SchemaData schemaUrl="#posiciones_muestras">
+		<SimpleData name="tessellate">-1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+		<SimpleData name="coord_validadas">sí</SimpleData>
+		<SimpleData name="tipo_de_muestreo">transecto Wolman con identificación litológica</SimpleData>
+		<SimpleData name="x_inicial">325999</SimpleData>
+		<SimpleData name="y_inicial">2055047</SimpleData>
+		<SimpleData name="pto_GPS_inicial">349/JR</SimpleData>
+		<SimpleData name="x_final">325972</SimpleData>
+		<SimpleData name="y_final">2055148</SimpleData>
+		<SimpleData name="pto_GPS_final">350/JR</SimpleData>
+		<SimpleData name="datum">WGS84</SimpleData>
+		<SimpleData name="fecha">16/08/14</SimpleData>
+		<SimpleData name="unidad_geom">canal del río Banilejo, preconfluencia con arroyo La Tachuela</SimpleData>
+		<SimpleData name="proyecto">FONDOCyT-Ocoa</SimpleData>
+		<SimpleData name="responsables">José Ramón, Iris</SimpleData>
+		<SimpleData name="pais">RD</SimpleData>
+		<SimpleData name="lugar">Las Dos Lomas</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.6489324710611,18.5790299606912</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>RBAT_03</name>
+	<description>RBAT_03</description>
+	<ExtendedData><SchemaData schemaUrl="#posiciones_muestras">
+		<SimpleData name="tessellate">-1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+		<SimpleData name="coord_validadas">sí</SimpleData>
+		<SimpleData name="tipo_de_muestreo">transecto Wolman con identificación litológica</SimpleData>
+		<SimpleData name="x_inicial">326139</SimpleData>
+		<SimpleData name="y_inicial">2054975</SimpleData>
+		<SimpleData name="pto_GPS_inicial">354/JR</SimpleData>
+		<SimpleData name="x_final">326188</SimpleData>
+		<SimpleData name="y_final">2054902</SimpleData>
+		<SimpleData name="pto_GPS_final">355/JR</SimpleData>
+		<SimpleData name="datum">WGS84</SimpleData>
+		<SimpleData name="fecha">16/08/14</SimpleData>
+		<SimpleData name="unidad_geom">terraza +1m, cauce del rio Banilejo, posconfluencia arroyo La Tachuela</SimpleData>
+		<SimpleData name="proyecto">FONDOCyT-Ocoa</SimpleData>
+		<SimpleData name="responsables">José Ramón, Iris</SimpleData>
+		<SimpleData name="pais">RD</SimpleData>
+		<SimpleData name="lugar">Las Dos Lomas</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.6475999052693,18.5783910846487</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>RBAT_05</name>
+	<description>RBAT_05</description>
+	<ExtendedData><SchemaData schemaUrl="#posiciones_muestras">
+		<SimpleData name="tessellate">-1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+		<SimpleData name="coord_validadas">sí</SimpleData>
+		<SimpleData name="tipo_de_muestreo">rodal con identificación litológica</SimpleData>
+		<SimpleData name="x_inicial">325704</SimpleData>
+		<SimpleData name="y_inicial">2055232</SimpleData>
+		<SimpleData name="pto_GPS_inicial">62/I</SimpleData>
+		<SimpleData name="datum">WGS84</SimpleData>
+		<SimpleData name="fecha">16/08/14</SimpleData>
+		<SimpleData name="unidad_geom">canal del río Banilejo, preconfluencia con arroyo La Tachuela</SimpleData>
+		<SimpleData name="proyecto">FONDOCyT-Ocoa</SimpleData>
+		<SimpleData name="responsables">Edwin, Gerónimo, Wendy</SimpleData>
+		<SimpleData name="pais">RD</SimpleData>
+		<SimpleData name="lugar">Las Dos Lomas</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.6517433055672,18.5806768439088</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>RBAT_06</name>
+	<description>RBAT_06</description>
+	<ExtendedData><SchemaData schemaUrl="#posiciones_muestras">
+		<SimpleData name="tessellate">-1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+		<SimpleData name="coord_validadas">sí</SimpleData>
+		<SimpleData name="tipo_de_muestreo">rodal con identificación litológica</SimpleData>
+		<SimpleData name="x_inicial">325731</SimpleData>
+		<SimpleData name="y_inicial">2055224</SimpleData>
+		<SimpleData name="pto_GPS_inicial">63/I</SimpleData>
+		<SimpleData name="datum">WGS84</SimpleData>
+		<SimpleData name="fecha">16/08/14</SimpleData>
+		<SimpleData name="unidad_geom">canal del río Banilejo, preconfluencia con arroyo La Tachuela</SimpleData>
+		<SimpleData name="proyecto">FONDOCyT-Ocoa</SimpleData>
+		<SimpleData name="responsables">Edwin, Gerónimo, Wendy</SimpleData>
+		<SimpleData name="pais">RD</SimpleData>
+		<SimpleData name="lugar">Las Dos Lomas</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.6514868180085,18.5806068105082</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>RBAT_07</name>
+	<description>RBAT_07</description>
+	<ExtendedData><SchemaData schemaUrl="#posiciones_muestras">
+		<SimpleData name="tessellate">-1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+		<SimpleData name="coord_validadas">sí</SimpleData>
+		<SimpleData name="tipo_de_muestreo">rodal con identificación litológica</SimpleData>
+		<SimpleData name="x_inicial">326123</SimpleData>
+		<SimpleData name="y_inicial">2054988</SimpleData>
+		<SimpleData name="pto_GPS_inicial">64/I</SimpleData>
+		<SimpleData name="datum">WGS84</SimpleData>
+		<SimpleData name="fecha">16/08/14</SimpleData>
+		<SimpleData name="unidad_geom">canal del río Banilejo, posconfluencia con arroyo La Tachuela</SimpleData>
+		<SimpleData name="proyecto">FONDOCyT-Ocoa</SimpleData>
+		<SimpleData name="responsables">Edwin, Gerónimo, Wendy</SimpleData>
+		<SimpleData name="pais">RD</SimpleData>
+		<SimpleData name="lugar">Las Dos Lomas</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.6477526123228,18.5785072062593</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>EPCC_01</name>
+	<description>EPCC_01</description>
+	<ExtendedData><SchemaData schemaUrl="#posiciones_muestras">
+		<SimpleData name="tessellate">-1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+		<SimpleData name="coord_validadas">sí</SimpleData>
+		<SimpleData name="tipo_de_muestreo">perfil con identificación litológica</SimpleData>
+		<SimpleData name="x_inicial">335838</SimpleData>
+		<SimpleData name="y_inicial">2051663</SimpleData>
+		<SimpleData name="pto_GPS_inicial">356/JR</SimpleData>
+		<SimpleData name="datum">WGS84</SimpleData>
+		<SimpleData name="fecha">17/08/14</SimpleData>
+		<SimpleData name="unidad_geom">aluvionamiento en paleoterraza proxima a El Pinar (U-2 F6.5)</SimpleData>
+		<SimpleData name="proyecto">FONDOCyT-Ocoa</SimpleData>
+		<SimpleData name="responsables">José Ramón, Iris</SimpleData>
+		<SimpleData name="pais">RD</SimpleData>
+		<SimpleData name="lugar">El Pinar</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.5554414644094,18.54924860832</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>EPCC_02</name>
+	<description>EPCC_02</description>
+	<ExtendedData><SchemaData schemaUrl="#posiciones_muestras">
+		<SimpleData name="tessellate">-1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+		<SimpleData name="coord_validadas">sí</SimpleData>
+		<SimpleData name="tipo_de_muestreo">perfil con identificación litológica</SimpleData>
+		<SimpleData name="x_inicial">335837</SimpleData>
+		<SimpleData name="y_inicial">2051662</SimpleData>
+		<SimpleData name="pto_GPS_inicial">65/I</SimpleData>
+		<SimpleData name="datum">WGS84</SimpleData>
+		<SimpleData name="fecha">17/08/14</SimpleData>
+		<SimpleData name="unidad_geom">aluvionamiento en paleoterraza proxima a El Pinar (U-2 F6.5)</SimpleData>
+		<SimpleData name="proyecto">FONDOCyT-Ocoa</SimpleData>
+		<SimpleData name="responsables">Edwin, Gerónimo, Wendy</SimpleData>
+		<SimpleData name="pais">RD</SimpleData>
+		<SimpleData name="lugar">El Pinar</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.5554508550463,18.5492394955015</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>EPCC_03</name>
+	<description>EPCC_03</description>
+	<ExtendedData><SchemaData schemaUrl="#posiciones_muestras">
+		<SimpleData name="tessellate">-1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+		<SimpleData name="coord_validadas">sí</SimpleData>
+		<SimpleData name="tipo_de_muestreo">perfil con identificación litológica</SimpleData>
+		<SimpleData name="x_inicial">335856</SimpleData>
+		<SimpleData name="y_inicial">2051673</SimpleData>
+		<SimpleData name="pto_GPS_inicial">66/I</SimpleData>
+		<SimpleData name="datum">WGS84</SimpleData>
+		<SimpleData name="fecha">17/08/14</SimpleData>
+		<SimpleData name="unidad_geom">aluvionamiento en paleoterraza proxima a El Pinar (U-3 F10,12)</SimpleData>
+		<SimpleData name="proyecto">FONDOCyT-Ocoa</SimpleData>
+		<SimpleData name="responsables">Edwin, Gerónimo, Wendy</SimpleData>
+		<SimpleData name="pais">RD</SimpleData>
+		<SimpleData name="lugar">El Pinar</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.5552717782301,18.5493403607956</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>RBAH_01</name>
+	<description>RBAH_01</description>
+	<ExtendedData><SchemaData schemaUrl="#posiciones_muestras">
+		<SimpleData name="tessellate">-1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+		<SimpleData name="coord_validadas">sí</SimpleData>
+		<SimpleData name="tipo_de_muestreo">rodal con identificación litológica</SimpleData>
+		<SimpleData name="x_inicial">323366</SimpleData>
+		<SimpleData name="y_inicial">2057284</SimpleData>
+		<SimpleData name="pto_GPS_inicial">59/I</SimpleData>
+		<SimpleData name="datum">WGS84</SimpleData>
+		<SimpleData name="fecha">15/08/14</SimpleData>
+		<SimpleData name="unidad_geom">canal del río Banilejo, posconfluencia con arroyo Hondo</SimpleData>
+		<SimpleData name="proyecto">FONDOCyT-Ocoa</SimpleData>
+		<SimpleData name="responsables">Iris, Wendy</SimpleData>
+		<SimpleData name="pais">RD</SimpleData>
+		<SimpleData name="lugar">confluencia río Banilejo y arroyo Hondo</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.6740739203752,18.5990196508444</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>RBAH_02</name>
+	<description>RBAH_02</description>
+	<ExtendedData><SchemaData schemaUrl="#posiciones_muestras">
+		<SimpleData name="tessellate">-1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+		<SimpleData name="coord_validadas">sí</SimpleData>
+		<SimpleData name="tipo_de_muestreo">rodal con identificación litológica</SimpleData>
+		<SimpleData name="x_inicial">323320</SimpleData>
+		<SimpleData name="y_inicial">2057303</SimpleData>
+		<SimpleData name="pto_GPS_inicial">346/JR</SimpleData>
+		<SimpleData name="datum">WGS84</SimpleData>
+		<SimpleData name="fecha">15/08/14</SimpleData>
+		<SimpleData name="unidad_geom">canal del río Banilejo, preconfluencia con arroyo Hondo</SimpleData>
+		<SimpleData name="proyecto">FONDOCyT-Ocoa</SimpleData>
+		<SimpleData name="responsables">Edwin, Gerónimo</SimpleData>
+		<SimpleData name="pais">RD</SimpleData>
+		<SimpleData name="lugar">confluencia río Banilejo y arroyo Hondo</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.6745114330284,18.5991874261986</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>RBAH_03</name>
+	<description>RBAH_03</description>
+	<ExtendedData><SchemaData schemaUrl="#posiciones_muestras">
+		<SimpleData name="tessellate">-1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+		<SimpleData name="coord_validadas">sí</SimpleData>
+		<SimpleData name="tipo_de_muestreo">transecto Wolman con identificación litológica</SimpleData>
+		<SimpleData name="x_inicial">323373</SimpleData>
+		<SimpleData name="y_inicial">2057267</SimpleData>
+		<SimpleData name="pto_GPS_inicial">344/JR</SimpleData>
+		<SimpleData name="x_final">323511</SimpleData>
+		<SimpleData name="y_final">2057464</SimpleData>
+		<SimpleData name="pto_GPS_final">348/JR</SimpleData>
+		<SimpleData name="datum">WGS84</SimpleData>
+		<SimpleData name="fecha">15/08/14</SimpleData>
+		<SimpleData name="unidad_geom">terraza +2m, cauce del río Banilejo en posconcluencia con el arroyo Hondo</SimpleData>
+		<SimpleData name="proyecto">FONDOCyT-Ocoa</SimpleData>
+		<SimpleData name="responsables">José Ramón, Edwin</SimpleData>
+		<SimpleData name="pais">RD</SimpleData>
+		<SimpleData name="lugar">confluencia río Banilejo y arroyo Hondo</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.6740060964215,18.5988666590027</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>AARO_01</name>
+	<description>AARO_01</description>
+	<ExtendedData><SchemaData schemaUrl="#posiciones_muestras">
+		<SimpleData name="tessellate">-1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+		<SimpleData name="coord_validadas">sí</SimpleData>
+		<SimpleData name="tipo_de_muestreo">rodal con identificación litológica</SimpleData>
+		<SimpleData name="x_inicial">339173</SimpleData>
+		<SimpleData name="y_inicial">2055281</SimpleData>
+		<SimpleData name="pto_GPS_inicial">499/JR</SimpleData>
+		<SimpleData name="datum">WGS84</SimpleData>
+		<SimpleData name="fecha">15/12/14</SimpleData>
+		<SimpleData name="unidad_geom">banco mediano de grava</SimpleData>
+		<SimpleData name="proyecto">FONDOCyT-Ocoa</SimpleData>
+		<SimpleData name="responsables">Iris, José Ramón, Wendy</SimpleData>
+		<SimpleData name="pais">RD</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.5241408803325,18.5821944845707</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>AARO_02</name>
+	<description>AARO_02</description>
+	<ExtendedData><SchemaData schemaUrl="#posiciones_muestras">
+		<SimpleData name="tessellate">-1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+		<SimpleData name="coord_validadas">sí</SimpleData>
+		<SimpleData name="tipo_de_muestreo">rodal con identificación litológica</SimpleData>
+		<SimpleData name="x_inicial">339159</SimpleData>
+		<SimpleData name="y_inicial">2055281</SimpleData>
+		<SimpleData name="pto_GPS_inicial">450/JR</SimpleData>
+		<SimpleData name="datum">WGS84</SimpleData>
+		<SimpleData name="fecha">15/12/14</SimpleData>
+		<SimpleData name="unidad_geom">canal del río Ocoa</SimpleData>
+		<SimpleData name="proyecto">FONDOCyT-Ocoa</SimpleData>
+		<SimpleData name="responsables">Iris, José Ramón, Wendy</SimpleData>
+		<SimpleData name="pais">RD</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.5242735222393,18.5821934120401</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>AARO_03</name>
+	<description>AARO_03</description>
+	<ExtendedData><SchemaData schemaUrl="#posiciones_muestras">
+		<SimpleData name="tessellate">-1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+		<SimpleData name="coord_validadas">sí</SimpleData>
+		<SimpleData name="tipo_de_muestreo">rodal con identificación litológica</SimpleData>
+		<SimpleData name="x_inicial">339159</SimpleData>
+		<SimpleData name="y_inicial">2055279</SimpleData>
+		<SimpleData name="pto_GPS_inicial">451/JR</SimpleData>
+		<SimpleData name="datum">WGS84</SimpleData>
+		<SimpleData name="fecha">15/12/14</SimpleData>
+		<SimpleData name="unidad_geom">canal del río Ocoa (margen derecho)</SimpleData>
+		<SimpleData name="proyecto">FONDOCyT-Ocoa</SimpleData>
+		<SimpleData name="responsables">Iris, José Ramón, Wendy</SimpleData>
+		<SimpleData name="pais">RD</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.5242733615597,18.5821753422917</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>AARO_08</name>
+	<description>AARO_08</description>
+	<ExtendedData><SchemaData schemaUrl="#posiciones_muestras">
+		<SimpleData name="tessellate">-1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+		<SimpleData name="coord_validadas">sí</SimpleData>
+		<SimpleData name="tipo_de_muestreo">rodal con identificación litológica</SimpleData>
+		<SimpleData name="x_inicial">339159</SimpleData>
+		<SimpleData name="y_inicial">2055284</SimpleData>
+		<SimpleData name="pto_GPS_inicial">456/JR</SimpleData>
+		<SimpleData name="datum">WGS84</SimpleData>
+		<SimpleData name="fecha">16/12/14</SimpleData>
+		<SimpleData name="unidad_geom">terraza +3m (margen izquierdo) río Ocoa</SimpleData>
+		<SimpleData name="proyecto">FONDOCyT-Ocoa</SimpleData>
+		<SimpleData name="responsables">Iris, José Ramón, Wendy</SimpleData>
+		<SimpleData name="pais">RD</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.5242737632592,18.5822205166627</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>AVAV_01</name>
+	<description>AVAV_01</description>
+	<ExtendedData><SchemaData schemaUrl="#posiciones_muestras">
+		<SimpleData name="tessellate">-1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+		<SimpleData name="coord_validadas">sí</SimpleData>
+		<SimpleData name="tipo_de_muestreo">rodal con identificación litológica</SimpleData>
+		<SimpleData name="x_inicial">342683</SimpleData>
+		<SimpleData name="y_inicial">2052983</SimpleData>
+		<SimpleData name="pto_GPS_inicial">480/JR</SimpleData>
+		<SimpleData name="datum">WGS84</SimpleData>
+		<SimpleData name="fecha">29/12/14</SimpleData>
+		<SimpleData name="unidad_geom">banco lateral del canal en el abanico aluvial del arroyo La Vaca</SimpleData>
+		<SimpleData name="proyecto">FONDOCyT-Ocoa</SimpleData>
+		<SimpleData name="responsables">America, Iris, José Ramón, Maria</SimpleData>
+		<SimpleData name="pais">RD</SimpleData>
+		<SimpleData name="lugar">abanico arroyo La Vaca</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.4907049145214,18.5616979565246</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>BPAP_01</name>
+	<description>BPAP_01</description>
+	<ExtendedData><SchemaData schemaUrl="#posiciones_muestras">
+		<SimpleData name="tessellate">-1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+		<SimpleData name="coord_validadas">sí</SimpleData>
+		<SimpleData name="tipo_de_muestreo">rodal con identificación litológica</SimpleData>
+		<SimpleData name="x_inicial">342123</SimpleData>
+		<SimpleData name="y_inicial">2051193</SimpleData>
+		<SimpleData name="pto_GPS_inicial">471/JR</SimpleData>
+		<SimpleData name="datum">WGS84</SimpleData>
+		<SimpleData name="fecha">28/12/14</SimpleData>
+		<SimpleData name="unidad_geom">canal seco del Arroyo Parra</SimpleData>
+		<SimpleData name="proyecto">FONDOCyT-Ocoa</SimpleData>
+		<SimpleData name="responsables">America, Iris, José Ramón, Maria</SimpleData>
+		<SimpleData name="pais">RD</SimpleData>
+		<SimpleData name="lugar">Boca de Parra</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.4958691294114,18.5454832822945</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>BPAP_06</name>
+	<description>BPAP_06</description>
+	<ExtendedData><SchemaData schemaUrl="#posiciones_muestras">
+		<SimpleData name="tessellate">-1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+		<SimpleData name="coord_validadas">sí</SimpleData>
+		<SimpleData name="tipo_de_muestreo">rodal con identificación litológica</SimpleData>
+		<SimpleData name="x_inicial">342130</SimpleData>
+		<SimpleData name="y_inicial">2051202</SimpleData>
+		<SimpleData name="pto_GPS_inicial">478/JR</SimpleData>
+		<SimpleData name="datum">WGS84</SimpleData>
+		<SimpleData name="fecha">29/12/14</SimpleData>
+		<SimpleData name="unidad_geom">terraza +3m, embutida con deposito de canal (U1)</SimpleData>
+		<SimpleData name="proyecto">FONDOCyT-Ocoa</SimpleData>
+		<SimpleData name="responsables">America, Iris, José Ramón, Maria</SimpleData>
+		<SimpleData name="pais">RD</SimpleData>
+		<SimpleData name="lugar">Boca de Parra</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.4958035298255,18.5455651228334</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>EJAP_01</name>
+	<description>EJAP_01</description>
+	<ExtendedData><SchemaData schemaUrl="#posiciones_muestras">
+		<SimpleData name="tessellate">-1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+		<SimpleData name="coord_validadas">sí</SimpleData>
+		<SimpleData name="tipo_de_muestreo">rodal con identificación litológica</SimpleData>
+		<SimpleData name="x_inicial">344308</SimpleData>
+		<SimpleData name="y_inicial">2049076</SimpleData>
+		<SimpleData name="pto_GPS_inicial">465/JR</SimpleData>
+		<SimpleData name="datum">WGS84</SimpleData>
+		<SimpleData name="fecha">28/12/14</SimpleData>
+		<SimpleData name="unidad_geom">canal del arroyo Parra , bloques metricos, de cantometria de conglomerados</SimpleData>
+		<SimpleData name="proyecto">FONDOCyT-Ocoa</SimpleData>
+		<SimpleData name="responsables">America, Iris, José Ramón, Maria</SimpleData>
+		<SimpleData name="pais">RD</SimpleData>
+		<SimpleData name="lugar">El Jobo</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.4750074113389,18.5265187621365</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>LLRO_01</name>
+	<description>LLRO_01</description>
+	<ExtendedData><SchemaData schemaUrl="#posiciones_muestras">
+		<SimpleData name="tessellate">-1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+		<SimpleData name="coord_validadas">sí</SimpleData>
+		<SimpleData name="tipo_de_muestreo">rodal con identificación litológica</SimpleData>
+		<SimpleData name="x_inicial">341338</SimpleData>
+		<SimpleData name="y_inicial">2050149</SimpleData>
+		<SimpleData name="pto_GPS_inicial">444/JR</SimpleData>
+		<SimpleData name="datum">WGS84</SimpleData>
+		<SimpleData name="fecha">14/12/14</SimpleData>
+		<SimpleData name="unidad_geom">banco lateral +1m (margen izquierda) río Ocoa</SimpleData>
+		<SimpleData name="proyecto">FONDOCyT-Ocoa</SimpleData>
+		<SimpleData name="responsables">Iris, José Ramón, Wendy</SimpleData>
+		<SimpleData name="pais">RD</SimpleData>
+		<SimpleData name="lugar">La Lisa</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.5032225226681,18.5359916858102</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>LLRO_02</name>
+	<description>LLRO_02</description>
+	<ExtendedData><SchemaData schemaUrl="#posiciones_muestras">
+		<SimpleData name="tessellate">-1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+		<SimpleData name="coord_validadas">sí</SimpleData>
+		<SimpleData name="tipo_de_muestreo">rodal con identificación litológica</SimpleData>
+		<SimpleData name="x_inicial">341301</SimpleData>
+		<SimpleData name="y_inicial">2050127</SimpleData>
+		<SimpleData name="pto_GPS_inicial">445/JR</SimpleData>
+		<SimpleData name="datum">WGS84</SimpleData>
+		<SimpleData name="fecha">14/12/14</SimpleData>
+		<SimpleData name="unidad_geom">banco lateral +1m (margen derecha) río Ocoa</SimpleData>
+		<SimpleData name="proyecto">FONDOCyT-Ocoa</SimpleData>
+		<SimpleData name="responsables">Iris, José Ramón, Wendy</SimpleData>
+		<SimpleData name="pais">RD</SimpleData>
+		<SimpleData name="lugar">La Lisa</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.5035712465161,18.5357901265341</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>LLRO_03</name>
+	<description>LLRO_03</description>
+	<ExtendedData><SchemaData schemaUrl="#posiciones_muestras">
+		<SimpleData name="tessellate">-1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+		<SimpleData name="coord_validadas">sí</SimpleData>
+		<SimpleData name="tipo_de_muestreo">rodal con identificación litológica</SimpleData>
+		<SimpleData name="x_inicial">341310</SimpleData>
+		<SimpleData name="y_inicial">2050145</SimpleData>
+		<SimpleData name="pto_GPS_inicial">446/JR</SimpleData>
+		<SimpleData name="datum">WGS84</SimpleData>
+		<SimpleData name="fecha">14/12/14</SimpleData>
+		<SimpleData name="unidad_geom">canal del río Ocoa</SimpleData>
+		<SimpleData name="proyecto">FONDOCyT-Ocoa</SimpleData>
+		<SimpleData name="responsables">Iris, José Ramón, Wendy</SimpleData>
+		<SimpleData name="pais">RD</SimpleData>
+		<SimpleData name="lugar">La Lisa</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.5034874215317,18.5359534351312</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>LRRO_01</name>
+	<description>LRRO_01</description>
+	<ExtendedData><SchemaData schemaUrl="#posiciones_muestras">
+		<SimpleData name="tessellate">-1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+		<SimpleData name="coord_validadas">sí</SimpleData>
+		<SimpleData name="tipo_de_muestreo">rodal con identificación litológica</SimpleData>
+		<SimpleData name="x_inicial">342199</SimpleData>
+		<SimpleData name="y_inicial">2040105</SimpleData>
+		<SimpleData name="pto_GPS_inicial">483/JR</SimpleData>
+		<SimpleData name="datum">WGS84</SimpleData>
+		<SimpleData name="fecha">30/12/14</SimpleData>
+		<SimpleData name="unidad_geom">canal del río Ocoa ( Los Ranchitos)</SimpleData>
+		<SimpleData name="proyecto">FONDOCyT-Ocoa</SimpleData>
+		<SimpleData name="responsables">Iris, José Ramón, Wendy</SimpleData>
+		<SimpleData name="pais">RD</SimpleData>
+		<SimpleData name="lugar">La Represa</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.4942800558791,18.4453080107923</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>PARO_01</name>
+	<description>PARO_01</description>
+	<ExtendedData><SchemaData schemaUrl="#posiciones_muestras">
+		<SimpleData name="tessellate">-1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+		<SimpleData name="coord_validadas">sí</SimpleData>
+		<SimpleData name="tipo_de_muestreo">rodal con identificación litológica</SimpleData>
+		<SimpleData name="x_inicial">341383</SimpleData>
+		<SimpleData name="y_inicial">2052586</SimpleData>
+		<SimpleData name="pto_GPS_inicial">460/JR</SimpleData>
+		<SimpleData name="datum">WGS84</SimpleData>
+		<SimpleData name="fecha">16/12/14</SimpleData>
+		<SimpleData name="unidad_geom">terraza +18m/22m, pared pueblo de Ocoa (margen derecha) U1</SimpleData>
+		<SimpleData name="proyecto">FONDOCyT-Ocoa</SimpleData>
+		<SimpleData name="responsables">Iris, José Ramón, Wendy</SimpleData>
+		<SimpleData name="pais">RD</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.5029889345985,18.5580133658693</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>GJRC_02</name>
+	<description>GJRC_02</description>
+	<ExtendedData><SchemaData schemaUrl="#posiciones_muestras">
+		<SimpleData name="tessellate">-1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+		<SimpleData name="coord_validadas">sí</SimpleData>
+		<SimpleData name="tipo_de_muestreo">rodal con identificación litológica</SimpleData>
+		<SimpleData name="x_inicial">337706</SimpleData>
+		<SimpleData name="y_inicial">2055256</SimpleData>
+		<SimpleData name="pto_GPS_inicial">488/JR</SimpleData>
+		<SimpleData name="datum">WGS84</SimpleData>
+		<SimpleData name="fecha">26/01/15</SimpleData>
+		<SimpleData name="unidad_geom">banco mediano</SimpleData>
+		<SimpleData name="proyecto">FONDOCyT-Ocoa</SimpleData>
+		<SimpleData name="responsables">José Ramón</SimpleData>
+		<SimpleData name="pais">RD</SimpleData>
+		<SimpleData name="lugar">río El Canal, Guinda Jamaca</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.5380377813442,18.5818557212027</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<name>POMI_01 U9AL01_R1</name>
+	<description>POMI_01 U9AL01_R1</description>
+	<ExtendedData><SchemaData schemaUrl="#posiciones_muestras">
+		<SimpleData name="tessellate">-1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">-1</SimpleData>
+		<SimpleData name="coord_validadas">sí</SimpleData>
+		<SimpleData name="tipo_de_muestreo">rodal con identificación litológica</SimpleData>
+		<SimpleData name="x_inicial">341384</SimpleData>
+		<SimpleData name="y_inicial">2052580</SimpleData>
+		<SimpleData name="pto_GPS_inicial">492</SimpleData>
+		<SimpleData name="datum">WGS84</SimpleData>
+		<SimpleData name="fecha">12/02/15</SimpleData>
+		<SimpleData name="unidad_geom">pared río Ocoa, terraza + 15m</SimpleData>
+		<SimpleData name="proyecto">FONDOCyT-Ocoa</SimpleData>
+		<SimpleData name="responsables">José Ramón, Geronimo, Iris</SimpleData>
+		<SimpleData name="pais">RD</SimpleData>
+		<SimpleData name="lugar">pared río Ocoa</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-70.5029789867762,18.5579592313981</coordinates></Point>
+  </Placemark>
+</Folder>
+</Document></kml>

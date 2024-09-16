@@ -1,0 +1,299 @@
+---
+title: "Prácticas de aula 5 (PA05). Tiempo en geomorfología<small><br>Geomorfología (GEO-114)<br>Universidad Autónoma de Santo Domingo (UASD)<br>Semestre 2024-02</small>"
+author: "El Tali"
+date: "`r format(Sys.Date(), '%Y-%m-%d')`"
+output:
+  # bookdown::github_document2:
+  #   number_sections: false
+  #   fig_caption: yes
+  bookdown::html_document2:
+    number_sections: false
+    code_folding: hide
+    fig_caption: yes
+    md_extensions: "-fancy_lists"
+    toc: true
+    toc_depth: 3
+editor_options: 
+  chunk_output_type: console
+always_allow_html: true
+bibliography: references.bib
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo = TRUE,
+  warning = FALSE,
+  message = FALSE,
+  out.width = '100%',
+  fig.retina = 4)
+```
+
+```{r, include=F}
+output_format <- knitr::opts_knit$get("rmarkdown.pandoc.to")
+repo_url <- system("git config --get remote.origin.url", intern = TRUE)
+repo_name <- sub(".git$", "", basename(repo_url))
+org_name <- basename(dirname(repo_url))
+rmd_filename <- tools::file_path_sans_ext(basename(knitr::current_input()))
+github_pages_url <- paste0("https://", org_name, ".github.io/", repo_name, "/", rmd_filename, ".html")
+```
+
+```{r, results='asis', echo=F}
+if (grepl('gfm', output_format)) {
+  cat('Versión HTML (quizá más legible), [aquí](', github_pages_url, ')\n', sep = '')
+} else if (output_format == 'latex') {
+  cat('Versión HTML (quizá más legible), [aquí](', github_pages_url, ')\n', sep = '')
+}
+```
+
+# Fecha/hora de entrega
+
+**16 de septiembre de 2024, 7:59 pm.**
+
+# Objetivos
+
+- Aplicar técnicas de datación relativa utilizando la elevación topográfica y la cronología de las rocas.
+
+- Realizar cálculos de datación absoluta a partir de porcentajes isotópicos remanentes, empleando fórmulas matemáticas.
+
+- Calcular la tasa de denudación anual y proyectarla a largo plazo para diferentes cuencas hidrográficas.
+
+- Analizar y comparar los tamaños de clastos de diferentes tipos de rocas en tramos altos y bajos de un río, aplicando métodos estadísticos.
+
+- Desarrollar habilidades en la interpretación de datos geológicos y geomorfológicos para comprender los procesos de evolución del relieve.
+
+# Ejercicio 1. Datación relativa usando la elevación topográfica y la edad de las rocas
+
+Usa [este mapa geológico con recuadros rotulados](data/mapa-geo250k-recuadros.jpg), incrustado también a continuación.
+
+![[Mapa de recuadros rotulados. Localiza el tuyo de la siguiente manera. Identifica los dos últimos números de tu matrícula; 2) Localiza el recuadro rotulado con dicho número](data/mapa-geo250k-recuadros.jpg)](data/mapa-geo250k-recuadros.jpg)
+
+Una vez hayas Localizado tu recuadro de 5x5 km, identifica las rocas que hay dentro del cuadro, tanto su tipología, como su edad (si no logras ver las rocas o el mapa es difuso, puedes confirmar con [este](https://drive.google.com/file/d/1NKyZjxzIedFq6Lq0bx-2YrGq5PtMh_r7/view), o con [este](data/geo250k.jpg) o con [este otro](data/geo250k.tif)). Refresca la cronología siguiendo la tabla cronoestratigráfica internacional, usando [este enlace](data/tabla-cronoestratigrafica-2021.pdf) o [este otro](https://stratigraphy.org/ICSchart/ChronostratChart2021-05Spanish.pdf).
+
+Redacta un párrafo que sintetice la evolución del relieve, con sus dataciones relativas debidamente identificadas.
+
+# Ejercicio 2. Datación absoluta a partir del porcentaje isotópico remanente
+
+Enviaste una muestra para datación por radioisótopo <sup>14</sup>C al laboratorio, y te reportaron que el porcentaje remanente es el asignado abajo (usa los dos dígitos terminales de tu matrícula para encontrar el porcentaje asignado a ti). Usa la fórmula N<sub>0</sub>=Ne<sup>-&lambda;t</sup> y la tabla 6.1 de @anderson2010geomorphology para calcular la edad aproximada de la muestra. Interpreta el resultado.
+
+```{r, include=F, echo=F}
+set.seed(99)
+terminales_1d <- 0:99
+terminales_2d <- ifelse(
+  nchar(terminales_1d) == 1,
+  paste0(0, terminales_1d), terminales_1d)
+`Porcentaje remanente` <- sample(terminales_1d, replace = F)
+porc_df <- data.frame(
+  `Dos dígitos terminales de matrícula` = terminales_2d,
+  `Porcentaje remanente`, check.names = F)
+```
+
+```{r, echo=F}
+kableExtra::kable(porc_df)
+```
+
+Redacta un párrafo interpretativo sobre el resultado.
+
+# Ejercicio 3. Tasa de denudación
+
+Para fines de referencia, la presentación correspondiente a este tema se encuentra alojada [aquí](https://github.com/geomorfologia-master/tema-3-meteorizacion-y-formas-resultantes/blob/gh-pages/meteorizacion_y_formas_resultantes.pdf).
+
+Cálcula la tasa de denudación anual y la denudación al cabo de 30 años, de tu cuenca (elige una de las 20 de abajo). Realiza tu cálculo utilizando la fórmula de la tasa de denudación anual (*Td*):
+
+*Td = (TTS/A)/&rho;*
+
+donde *TTS* es la tasa de transporte de sedimentos, *A* es el área de la cuenca y *&rho;* es la densidad promedio de las rocas de la cuenca.
+
+Interpreta tu resultado comparando con otros casos o respondiendo a preguntas tales como "Si la *TTS*, *A* o *&rho;* fuesen menores o mayores, ¿sería mayor o menor la *Td*?
+
+IMPORTANTE: no olvides transformar las unidades a un sistema común.
+
+
+
+```{r, echo=F}
+# Configurar semilla para reproducibilidad
+set.seed(42)
+
+# Generar tamaño (km cuadrados) con valores aleatorios entre 200 y 600
+tamaño_km_cuad <- runif(20, min = 200, max = 600)
+
+# Generar densidad de rocas (g por cm cúbicos) con valores aleatorios entre 2.4 y 3.1
+densidad_rocas <- runif(20, min = 2.4, max = 3.1)
+
+# Generar tasa de transporte de sedimentos (kg/año), correlacionada con el tamaño
+# Multiplicamos "tamaño (km cuad.)" por un factor aleatorio cercano a 200,000 y añadimos un sesgo aleatorio pequeño
+tasa_min <- 180000
+tasa_max <- 220000
+tasa_media <- mean(c(tasa_min, tasa_max))
+tasa_transporte_sed <- tamaño_km_cuad *
+  runif(20, min = tasa_min, max = tasa_max) +
+  rnorm(20, mean = tasa_media * 0.1, sd = tasa_media * 0.01)
+
+# Generar nombres de estudiantes
+estudiantes <- paste("Estudiante", 1:20)
+
+# Crear data frame con los títulos de columnas especificados
+df <- data.frame(
+  estudiante = estudiantes,
+  `tamaño (km cuad.)` = tamaño_km_cuad,
+  `densidad rocas (g por cm cúbicos)` = densidad_rocas,
+  `tasa transporte sed (kg/año)` = tasa_transporte_sed,
+  check.names = F
+)
+
+# Mostrar el data frame
+kableExtra::kable(df)
+```
+
+# Ejercicio 4. Tamaños de clastos de tipos de rocas comunes en distintos tramos de río
+
+```{r, include=F, echo=F}
+library(tidyverse)
+library(sf)
+library(leaflet)
+library(leaflet.extras)
+library(webshot2)
+library(htmlwidgets)
+d <- read_csv('data/clastos_con_identificacion_litologia.csv')
+m <- st_read('data/posiciones_muestras_orig.kml') %>%
+  filter(grepl(paste0(unique(d$codigo_lugar), collapse = '|'), Name))
+m %>% st_write('data/posiciones_muestras.kml', delete_dsn = T)
+cen <- m %>%
+  mutate(codigo_4 = substr(Name, start = 1, stop = 4)) %>%  # Extraer los primeros 4 caracteres
+  group_by(codigo_4) %>%  # Agrupar por los primeros 4 caracteres
+  summarize(geometry = st_union(geometry)) %>%  # Unir geometrías dentro de cada grupo
+  st_centroid()  # Calcular el centroide de cada grupo
+
+# Extraer coordenadas de los puntos en el sf
+coords <- st_coordinates(cen)
+
+# Crear el mapa de Leaflet
+mapa <- leaflet(data = cen %>% rename(Name = codigo_4)) %>%
+  addProviderTiles(providers$Esri.WorldImagery) %>%  # Cambia a la capa de imagen satelital
+  addCircleMarkers(lng = coords[, 1],  # Longitud (X)
+                   lat = coords[, 2],  # Latitud (Y)
+                   radius = 5,
+                   color = "red",
+                   fillColor = "red",
+                   fillOpacity = 0.7,
+                   popup = ~Name,  # Asumiendo que tu sf tiene un campo llamado 'Name'
+                   label = ~Name,  # Añade un label estático con el nombre
+                    labelOptions = labelOptions(
+                     noHide = TRUE,  # El label siempre estará visible
+                     direction = "auto",  # Dirección automática del label
+                     style = list(
+                       "background-color" = "rgba(255, 255, 255, 0.7)",
+                       "color" = "black",  # Color del texto
+                       "padding" = "5px",  # Espaciado alrededor del texto
+                       "border-color" = "rgba(0, 0, 0, 0.5)"  # Color del borde con transparencia
+                     )
+                   )
+  )
+```
+
+```{r, results='asis', echo=F, fig.cap='Distribución de muestras de clastos tomadas en el canal del río Ocoa en distintos tramos'}
+if (grepl('gfm', output_format)) {
+  # Guardar el mapa como HTML y luego capturar una imagen
+  saveWidget(mapa, "temp_map.html", selfcontained = TRUE)
+  webshot(url = "temp_map.html", file = "mapa.png", vwidth = 800, vheight = 600, cliprect = "viewport")
+  cat("![Distribución de muestras de clastos tomadas en el canal del río Ocoa en distintos tramos](mapa.png)")
+  invisible(file.remove('temp_map.html'))
+}
+```
+
+```{r mapa, out.width='80%', fig.height=4, echo=F, fig.cap='Distribución de muestras de clastos tomadas en el canal del río Ocoa en distintos tramos'}
+if (grepl('html', output_format)) {
+  mapa
+}
+```
+
+Como indicador indirecto del potencial erosivo, utiliza los datos de muestras de clastos tomadas en la cuenca del río Ocoa, que se encuentran alojados en `data/clastos.csv`. Compararás el tamaño de los clastos de los tipos de rocas que sean comunes entre tus dos muestras asignadas (filtra según el campo `codigo_lugar` del archivo). Reserva el par "Estudiante 1" al Tali.
+
+```{r, echo=F}
+set.seed(42)
+{
+  muestra1 <- sample(
+    x = unique(grep('LPRO', d$codigo_lugar, value = T)), 20, replace = T)
+  muestra2 <- sample(
+    x = unique(grep('LPRO', d$codigo_lugar, invert = T, value = T)), 20, replace = T)
+
+}
+distribucion_muestras_clastos <- data.frame(
+  Estudiante = paste('Estudiante', 1:20),
+  `Muestra 1` = muestra1,
+  `Muestra 2` = muestra2,
+  check.names = F)
+kableExtra::kable(distribucion_muestras_clastos)
+```
+
+Cada muestra contiene, aproximadamente, 100 clastos de distintos tipos de litologías medidos en tres ejes: largo, ancho y espesor. Fijándote en el mapa de arriba, notarás que una de tus muestras representa el tramo alto del río, la otra el tramo bajo.
+
+Como en el aula sólo tienes acceso a un móvil (quizá también puedes usar una de las pocas PCs activas para acceder al servidor RStudio, pero recuerda usar una ventana incógnito preferiblemente), puedes usar el servidor RStudio. Intenta pegar el código a continuación en R (si no lo ves, presiona el botón `Show`), cambiando los nombres de tus muestras (IMPORTANTE: no te funcionará ejecutar el código tal como está, debes comprenderlo y editarlo; de lo contrario, tu práctica quedará mal). No es recomendable que lo intentes sólo con la calculadora, porque sería muy largo.
+
+```{r, eval=F}
+# Cargar las librerías necesarias para el análisis de datos
+library(tidyverse)  # Incluye ggplot2, dplyr, tidyr, etc., para manipulación y visualización de datos
+library(skimr)      # Herramienta para obtener resúmenes estadísticos
+source('R/funciones.R')  # Cargar funciones adicionales definidas en un archivo externo
+
+# Crear un archivo temporal para almacenar los datos descargados
+archivo_temp <- tempfile()
+
+# Definir la URL base desde donde se descargarán los datos
+url_base <- 'https://raw.githubusercontent.com/geofis/tiempo-en-geomorfologia/master'
+
+# Definir la ruta del archivo de datos dentro del repositorio
+ruta_clastos <- '/data/clastos_con_identificacion_litologia.csv'
+
+# Descargar el archivo de datos del repositorio a la ubicación temporal
+download.file(url = paste0(url_base, ruta_clastos), destfile = archivo_temp)
+
+# Leer el archivo CSV descargado y almacenarlo en el objeto 'datos'
+datos <- read_csv(archivo_temp)
+
+# Filtrar los datos para incluir solo las observaciones de los lugares asignados
+# Sustituyan 'LPRO_03|RBAT_06' por los códigos de lugar que se les hayan asignado
+mis_datos <- datos %>% filter(grepl('LPRO_03|RBAT_06', codigo_lugar))
+
+# Agrupar los datos filtrados por 'codigo_lugar' y seleccionar solo las columnas numéricas
+# Luego, aplicar la función 'resumenes_est()' para obtener resúmenes estadísticos
+mis_datos %>%
+  group_by(codigo_lugar) %>%
+  select_if(is.numeric) %>% 
+  resumenes_est()
+
+# Renombrar las columnas de interés para que sean más descriptivas
+# Convertir los datos a un formato largo, para facilitar la visualización
+mis_datos %>%
+  rename(
+    Lugar = codigo_lugar,
+    Largo = largo_en_mm,
+    Ancho = ancho_en_mm,
+    Espesor = espesor_en_mm) %>% 
+  pivot_longer(cols = matches('Lar|An|Es', ignore.case = F),
+               names_to = 'Dimensión',
+               values_to = 'mm') %>% 
+  mutate(Dimensión = factor(
+    Dimensión,
+    levels = c('Largo', 'Ancho', 'Espesor'))) %>% 
+  ggplot + aes(x = Lugar, y = mm, fill = Lugar) +
+  geom_boxplot(alpha = 0, width = 0.3, color = "#808080") +  # Crear un boxplot con los datos
+  geom_violin(alpha = 0.6, width = 0.8, scale = 'width') +   # Añadir un violin plot para mostrar la distribución
+  ylim(0, NA) +  # Establecer el límite inferior del eje y en 0
+  theme_bw() +    # Usar un tema de fondo blanco para el gráfico
+  theme(legend.position = 'none', text = element_text(size = 18)) +  # Ajustar la leyenda y el tamaño del texto
+  scale_x_discrete(labels = function(x) str_wrap(x, width = 10)) +  # Ajustar las etiquetas del eje x para mejorar la legibilidad
+  facet_grid(~ Dimensión)  # Crear facetas para cada dimensión (Largo, Ancho, Espesor)
+
+# Realizar una prueba t de Student para comparar las medias de 'ancho_en_mm' entre diferentes lugares
+t.test(ancho_en_mm ~ codigo_lugar, mis_datos)
+```
+
+Compara si los tamaños en el eje de anchura (campo `ancho_en_mm`) difieren significativamente entre la muestra de tramo alto y la de tramo bajo. Para ello, primero determina cuántos clastos de cada roca hay por cada muestra, luego obtén la media de la anchura, y evalúa dónde dicha media es mayor o menor, si en la muestra de tramo alto o en la de tramo bajo. Utiliza una prueba estadística para determinar si se trata de una diferencia significativa. Interpreta el resultado sobre la base de la inteperización y el tiempo en geomorfología.
+
+Para que puedas visualizar las posiciones de las muestras, intenta abrir el mapa de arriba con detenimiento (si abres este cuaderno en su versión HTML, tendrás un mapa interactivo). Verás que dicho mapa agrupa las muestras del mismo código como un único punto, por ejemplo, "LPRO_01" a "LPRO_03" se agrupan bajo el punto "LPRO".
+
+Si lo deseas (no es imprescindible), puedes ver un mapa de los puntos en su máximo detalle. Descarga el archivo KML `data/posiciones_muestras.kml`, el cual contiene los puntos de muestras desagregados. Cárgalo en QGIS o en GoogleEarth. Dado que la densidad de puntos por unidad de área puede ser muy grande en determinadas zonas, debes acercarte mucho para visualizar tus puntos asignados.
+
+
+# Referencias
+
